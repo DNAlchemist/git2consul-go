@@ -79,7 +79,7 @@ func (h *KVHandler) UpdateToHead(repo repository.Repo) error {
 		err := h.putBranch(repo, plumbing.ReferenceName(head.Name().Short()))
 		if err != nil {
 			if os.IsNotExist(err) {
-				log.Warnf("Skip repository: %s", repo.Name())
+				log.Warnf("Skip repository %s: config folder is not exist", repo.Name())
 				return nil
 			}
 			return err
