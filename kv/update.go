@@ -18,6 +18,7 @@ package kv
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/DNAlchemist/git2consul-go/repository"
 	"github.com/apex/log"
@@ -77,6 +78,10 @@ func (h *KVHandler) UpdateToHead(repo repository.Repo) error {
 		log.Infof("KV PUT changes: %s/%s", repo.Name(), refName)
 		err := h.putBranch(repo, plumbing.ReferenceName(head.Name().Short()))
 		if err != nil {
+			if os.IsNotExist(err) {
+				log.Warnf("Skip repository:", repo.Name())
+				return nil
+			}
 			return err
 		}
 
