@@ -28,8 +28,8 @@ import (
 	git "gopkg.in/src-d/go-git.v4"
 	"gopkg.in/src-d/go-git.v4/config"
 
-	"github.com/KohlsTechnology/git2consul-go/config/mock"
-	"github.com/KohlsTechnology/git2consul-go/repository/mocks"
+	"github.com/DNAlchemist/git2consul-go/config/mock"
+	"github.com/DNAlchemist/git2consul-go/repository/mocks"
 )
 
 func init() {

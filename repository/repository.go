@@ -25,7 +25,7 @@ import (
 	"gopkg.in/src-d/go-git.v4/plumbing/object"
 	"gopkg.in/src-d/go-git.v4/storage"
 
-	"github.com/KohlsTechnology/git2consul-go/config"
+	"github.com/DNAlchemist/git2consul-go/config"
 	"gopkg.in/src-d/go-git.v4"
 	"gopkg.in/src-d/go-git.v4/plumbing"
 	"gopkg.in/src-d/go-git.v4/plumbing/transport"

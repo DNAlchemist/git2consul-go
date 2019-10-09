@@ -21,9 +21,9 @@ import (
 	"path"
 	"testing"
 
-	"github.com/KohlsTechnology/git2consul-go/config"
-	"github.com/KohlsTechnology/git2consul-go/kv/mocks"
-	"github.com/KohlsTechnology/git2consul-go/repository"
+	"github.com/DNAlchemist/git2consul-go/config"
+	"github.com/DNAlchemist/git2consul-go/kv/mocks"
+	"github.com/DNAlchemist/git2consul-go/repository"
 	"github.com/apex/log"
 	"github.com/hashicorp/consul/api"
 	"github.com/stretchr/testify/assert"

@@ -23,8 +23,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/KohlsTechnology/git2consul-go/config"
-	"github.com/KohlsTechnology/git2consul-go/runner"
+	"github.com/DNAlchemist/git2consul-go/config"
+	"github.com/DNAlchemist/git2consul-go/runner"
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/text"
 )
