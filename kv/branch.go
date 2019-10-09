@@ -62,6 +62,10 @@ func (h *KVHandler) putBranch(repo repository.Repo, branch plumbing.ReferenceNam
 	workdir = filepath.Join(workdir, sourceRoot)
 	err := filepath.Walk(workdir, pushFile)
 	if err != nil {
+		if os.IsNotExist(err) {
+			log.Warnf("Directory is not exists: %s", workdir)
+			return nil
+		}
 		log.WithError(err).Debug("PUT branch error")
 		return err
 	}
